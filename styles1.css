@@ -1,0 +1,363 @@
+/* ========================================
+   PROFESSIONAL PORTFOLIO - FULL PAGE SECTIONS
+   Simple & Beginner Friendly
+   ======================================== */
+
+/* Reset - Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling between sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body - Main page setup */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container - Removed fixed width for full-page effect */
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Main Heading - Your name (Hero section) */
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  padding: 80px 20px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+}
+
+/* Navigation Menu - Sticky at top */
+nav {
+  background-color: #2c3e50;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #667eea;
+}
+
+/* Section Headings */
+h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+/* Subheadings in articles */
+h3 {
+  color: #667eea;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* All Sections - Full page height */
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Alternate section backgrounds for visual separation */
+section:nth-child(odd) {
+  background-color: white;
+}
+
+section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Section content wrapper */
+section > * {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+#about h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+#about p {
+  font-size: 1.3rem;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Education Section */
+#education {
+  background-color: white;
+}
+
+/* Articles - Individual items in Education and Projects */
+article {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f9f9f9;
+}
+
+/* Projects Container - Flexbox for side-by-side layout */
+.projects-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.projects-container article {
+  flex: 1;
+  min-width: 350px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contact Section */
+#contact {
+  background-color: white;
+}
+
+#contact > div {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Paragraphs */
+p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Bold text */
+strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #764ba2;
+}
+
+/* Contact Form */
+form {
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Form Inputs and Textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #2c3e50;
+  color: white;
+  margin: 0;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+/* Responsive - Tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    padding: 60px 20px 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #about h2 {
+    font-size: 2.2rem;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+
+  nav li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container article {
+    max-width: 100%;
+  }
+
+  section {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+}
+
+/* Responsive - Mobile phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  article {
+    padding: 20px;
+  }
+
+  form {
+    padding: 25px;
+  }
+}
